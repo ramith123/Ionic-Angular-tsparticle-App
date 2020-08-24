@@ -1,5 +1,7 @@
 {
   "name": "particleTest",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

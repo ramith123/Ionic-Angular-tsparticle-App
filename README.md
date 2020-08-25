@@ -8,7 +8,7 @@ live PWA example is available [Here](https://first-ionic-app-theme-change.web.ap
 
 ## [tsparticles](https://github.com/matteobruni/tsparticles) config file
 
-This file is located in `src/assets/data/particles.json`. You can generate a custom one using [tsparticle generator](https://github.com/matteobruni/tsparticles#usage), and replace the one in file. 
+This file is located in `src/assets/data/particles.json`. You can generate a custom one using [tsparticle generator](https://github.com/matteobruni/tsparticles#usage), and replace the one in file.
 
 ## Some unconventional fixes
 
@@ -20,28 +20,14 @@ The content inside `<particles>` tag loads after the css content (which sets the
 
 ### Solution
 
-Simulate Through JS (check `home.page.ts`), a page resize.
+~~Simulate Through JS (check `home.page.ts`), a page resize.~~
 
-Solution found here. [How to trigger the window resize event in JavaScript?](https://stackoverflow.com/questions/1818474/how-to-trigger-the-window-resize-event-in-javascript)
-
-```ts
-
-//After tsparticles are set up, this functions runs
-particlesLoaded(container: Container): void {
-
-  //Solution from stackOverFlow
-    var event;
-    if (typeof Event === "function") {
-      event = new Event("resize");
-    } else {
-      /*IE*/
-      event = document.createEvent("Event");
-      event.initEvent("resize", true, true);
-    }
-    window.dispatchEvent(event);
-  }
-```
+~~Solution found here. [How to trigger the window resize event in JavaScript?](https://stackoverflow.com/questions/1818474/how-to-trigger-the-window-resize-event-in-javascript)~~
 
 This only works some of the time. If anyone knows a solution feel free to implement.
+
+### **UPDATE**
+
+A new temporary solution was provided by [Matteo Bruni](https://github.com/matteobruni). Check [this issue](https://github.com/ramith123/Ionic-Angular-tsparticle-App/issues/1) for details.
 
 Thanks!

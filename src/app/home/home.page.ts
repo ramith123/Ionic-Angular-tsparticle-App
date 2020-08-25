@@ -15,6 +15,7 @@ export class HomePage {
   particlesOptions = particleConfig["default"];
 
   particlesLoaded(container: Container): void {
+    // Credits to :  https://github.com/matteobruni
     setTimeout(async () => {
       const canvas = container.canvas.element;
       if (!canvas) {

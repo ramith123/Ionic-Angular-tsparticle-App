@@ -1,3 +1,7 @@
 <ion-content [fullscreen]="true">
-  <div id="particles-js"></div>
+  <Particles
+    [id]="id"
+    [options]="particlesOptions"
+    (particlesLoaded)="particlesLoaded($event)"
+  ></Particles>
 </ion-content>

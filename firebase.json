@@ -26,6 +26,15 @@
             "value": "no-cache"
           }
         ]
+      },
+      {
+        "source": "src/assets/data/particles.json",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
       }
     ]
   }

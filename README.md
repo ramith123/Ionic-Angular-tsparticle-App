@@ -1,10 +1,11 @@
 # Ionic-Angular-tsparticle-App
 An Ionic-angular integration example with tsparticle. (More specifically ag-particles)
+Recent for going with tsparticles instead of particlejs is because tsparticles supports touch on mobile. (the Same `onHold` function)
 live application is available [Here](https://first-ionic-app-theme-change.web.app/home). (Hopefully)
 
 ## [tsparticles](https://github.com/matteobruni/tsparticles) config file
 
-This file is located in `src/assets/data/particles.json`. You can generate a custom one using [tsparticle generator](https://github.com/matteobruni/tsparticles#usage)
+This file is located in `src/assets/data/particles.json`. You can generate a custom one using [tsparticle generator](https://github.com/matteobruni/tsparticles#usage), and replace the one in file. 
 
 ## Some unconventional fixes
 I am new to Angular so I had to come with a fix for a problem I couldn't figure out. 

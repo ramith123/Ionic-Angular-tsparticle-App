@@ -3,7 +3,7 @@ An Ionic-angular integration example with tsparticle. (More specifically ag-part
 
 Recent for going with tsparticles instead of particlejs is because tsparticles supports touch on mobile. (the Same `onHold` function)
 
-live application is available [Here](https://first-ionic-app-theme-change.web.app/home). (Hopefully)
+live PWA is available [Here](https://first-ionic-app-theme-change.web.app/home). (Hopefully)
 
 ## [tsparticles](https://github.com/matteobruni/tsparticles) config file
 
